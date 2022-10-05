@@ -1,8 +1,19 @@
 /* COMMON */
 
+.mainpage-container {
+    height: calc(100vh - 5rem);
+    display: flex;
+}
+
+body {
+    height: 100vh;
+    background-color: #141922;
+    color:#fff;
+}
+
 
 /* TYPO */
 body {
-    font-family: 'Montserrat', sans-serif;
-    width: 100vh;
+    font-family: 'Montserrat', sans-serif;   
 }
+
