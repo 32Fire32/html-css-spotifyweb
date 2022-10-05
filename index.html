@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Link Css -->
@@ -26,7 +28,8 @@
                         </a>
                     </div>
                     <nav class="nav-web">
-                        <div class="nav-buttons">                        
+                        <div class="nav-buttons flex">  
+                            <div class="acid-green"></div>                      
                             <img class="micon" src="img/home.svg" alt="home">
                             <a class="link-nostyle" href="#">Home</a> 
                         </div>
@@ -94,6 +97,49 @@
             QUESTO E' IL MAIN 
         </main>
     </div>
-    <footer>Controlli</footer>
+    <footer>
+        <div class="song-controls flex">
+            <div class="left-controls flex">
+                <div class="playing flex">
+                    <img src="img/sinister.jpeg" alt="sinister">
+                    <div class="title-song">
+                        <h4>Sinister</h4>
+                        <small>Brano</small>
+                        <small>Nome</small>
+                    </div>
+                    <div class="actions">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>  
+                </div>               
+            </div>
+            <div class="center-controls">
+                <div class="commands flex">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="line flex">
+                    <small>0:25</small>
+                    <div class="play-line flex">
+                        <div class="light-line"></div>
+                        <div class="dark-line"></div>
+                    </div>
+                    <small>4:35</small>
+                </div>
+            </div>
+            <div class="right-controls flex">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-tv"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="play-line flex">
+                    <div class="light-line"></div>
+                    <div class="dark-line"></div>
+                </div>
+            </div>
+        </div>        
+    </footer>
 </body>
 </html>

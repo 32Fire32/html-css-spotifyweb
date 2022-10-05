@@ -53,3 +53,9 @@
 .list-nostyle {
     list-style: none;
 }
+
+/* FLEX */ 
+
+.flex {
+    display: flex;
+}
