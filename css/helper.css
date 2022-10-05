@@ -43,3 +43,13 @@
 .nobp {
     padding-bottom: 0;
 }
+
+/* LIST LINK */
+
+.link-nostyle {
+    text-decoration: none;
+}
+
+.list-nostyle {
+    list-style: none;
+}

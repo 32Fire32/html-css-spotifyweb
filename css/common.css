@@ -3,12 +3,18 @@
 .mainpage-container {
     height: calc(100vh - 5rem);
     display: flex;
+    justify-content: space-between;
 }
 
 body {
     height: 100vh;
     background-color: #141922;
     color:#fff;
+    font-weight: 700;
+}
+
+a {
+    color: #fff;
 }
 
 

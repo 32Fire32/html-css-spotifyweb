@@ -1,6 +1,152 @@
 /* ASIDE */
 
+.aside-web {
+    display: none;
+}
+
 aside {
-    min-width: 12.5rem;
+    max-width: 50px;
     background-color: black;
+    padding-top: 0.3125rem;
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
+}
+
+.aside-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.aside-up {
+    text-align: center;
+}
+
+.aside-mobile img {
+    margin-bottom: 0.625rem;
+    width:90%;
+    filter: opacity(0.5);
+}
+
+a:first-of-type img{
+    filter: opacity(1);
+}
+
+.aside-down {
+    text-align: center;
+}
+
+.download {
+    width: 0.9375rem;
+    height: 0.9375rem;
+}
+
+.profile {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: #808080;
+    border-radius: 100%;
+}
+
+.profile img {
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media screen and (min-width:700px){
+
+    .aside-mobile {
+        display: none;
+    }
+    
+    .aside-web:not(.spotify-logo, .playlist-title, .nav-buttons:first-of-type img) {
+        filter: opacity(0.5);
+    }
+
+    .logo {
+        width: 125px;
+    }
+
+    .aside-web {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    aside {
+        max-width: 230px;
+        padding: 20px 55px 5px 20px;
+    }
+
+    .nav-web {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        height: 100%;
+    }
+
+    .nav-buttons {
+        margin-bottom: 10px;
+    }
+
+    .nav-web a {
+        color:#fff;
+        margin-left: 10px;
+    }
+
+    .micon {
+        width: 22px;
+        margin-bottom: 0;
+    }
+
+    .playlist {
+        overflow-y: auto;
+    }
+
+    .playlist-title {
+        margin-bottom: 10px;
+    }
+
+    .plus {
+        text-align: center;
+        font-weight: 700;
+        width:40px;
+        height: 40px;
+        background-color: #a3a3a3;
+        font-size: 30px;
+        display: inline-block;
+        color: #000;
+        margin-right: 10px;
+    }
+
+    li {
+        margin-bottom: 20px;;
+    }
+
+    .aside-web-bottom img {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .profile {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .doe {
+        border-top: 1px solid #808080;
+        padding-top: 20px;
+        margin-top: 20px;
+        display: flex;
+        margin-bottom: 10px;
+        width: 200px;
+        align-items: center;
+    }
 }
