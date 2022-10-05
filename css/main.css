@@ -2,16 +2,31 @@
 
 main {
     overflow-y: auto;
-    /* width: calc(100vw - 3.125rem); */
+    width: calc(100vw - 50px);
     background-color: brown;
 }
 
 /* HEADER */
 
 header {
+    width: calc(100% - 50px);
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    right: 0;
-    left:12.5rem;
+    right:0;
+    left: 50px;
     top:0;
+    height: 5.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* RESPONSIVE */
+
+/* Tablet e Desktop */
+@media screen and (min-width:700px) {
+    header {
+        width: calc(100% - 230px);
+        left: 230px;
+    }
 }

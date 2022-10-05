@@ -5,7 +5,7 @@
 }
 
 aside {
-    max-width: 50px;
+    max-width: 3.125rem;
     background-color: black;
     padding-top: 0.3125rem;
     padding-left: 0.3125rem;
@@ -57,15 +57,28 @@ a:first-of-type img{
 
 /* RESPONSIVE */
 
-/* Tablet */
+/* Tablet e Desktop */
 @media screen and (min-width:700px){
 
     .aside-mobile {
         display: none;
     }
-    
-    .aside-web:not(.spotify-logo, .playlist-title, .nav-buttons:first-of-type img) {
+
+    aside {
+        max-width: 14.375rem;
+        padding: 1.25rem 3.4375rem 0.3125rem 1.25rem;
+    }
+
+    .micon, .nav-web a, li {
         filter: opacity(0.5);
+    }
+
+    .nav-buttons:first-child img, .nav-buttons:first-child a {
+        filter: opacity(1);
+    }
+
+    li:first-child {
+        filter: opacity(1);
     }
 
     .logo {
@@ -79,13 +92,8 @@ a:first-of-type img{
         height: 100%;
     }
 
-    aside {
-        max-width: 230px;
-        padding: 20px 55px 5px 20px;
-    }
-
     .nav-web {
-        margin-top: 20px;
+        margin-top: 1.25rem;
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -93,12 +101,12 @@ a:first-of-type img{
     }
 
     .nav-buttons {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     .nav-web a {
         color:#fff;
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
 
     .micon {
@@ -111,7 +119,7 @@ a:first-of-type img{
     }
 
     .playlist-title {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     .plus {
@@ -123,30 +131,32 @@ a:first-of-type img{
         font-size: 30px;
         display: inline-block;
         color: #000;
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
 
     li {
-        margin-bottom: 20px;;
+        margin-bottom: 20px;
     }
 
     .aside-web-bottom img {
         margin-bottom: 0;
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
 
     .profile {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
 
     .doe {
-        border-top: 1px solid #808080;
-        padding-top: 20px;
-        margin-top: 20px;
+        border-top: 0.0625rem solid #808080;
+        padding-top: 1.25rem;
+        margin-top: 1.25rem;
         display: flex;
-        margin-bottom: 10px;
-        width: 200px;
+        margin-bottom: 0.625rem;
+        width: 12.5rem;
         align-items: center;
     }
+
+    
 }
