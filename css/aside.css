@@ -40,6 +40,7 @@ a:first-of-type img{
 .download {
     width: 0.9375rem;
     height: 0.9375rem;
+    margin-right: 10px;
 }
 
 .profile {
@@ -53,6 +54,8 @@ a:first-of-type img{
     object-fit: cover;
     border-radius: 100%;
 }
+
+
 
 .web {
     display: none;
@@ -73,6 +76,10 @@ a:first-of-type img{
 
     .logo {
         height: 5.625rem;
+    }
+
+    .logo img, .logo a, .nav-buttons:first-child img, .nav-buttons:first-child a {
+        filter: opacity(1);
     }
 
     .aside-container {
@@ -100,6 +107,7 @@ a:first-of-type img{
         flex-direction: column;
         justify-content:flex-end ;
         margin-top: auto;
+        align-items:flex-start;
     }
 
     .aside-buttons img {
@@ -142,19 +150,36 @@ a:first-of-type img{
         overflow-y: auto;
     }
 
-    .profilew img {
-        margin-right:1.25rem;
+    .download {
+        width: 100%;
     }
 
-    .profilew {
-        display: inline-block;
+    .down-icon img {
+        width: 20px;
+        margin-right: 10px;
     }
-
+    
     .doe {
-        align-items: center;
         margin-top:0.625rem;
         padding-top :0.625rem;
         border-top: 0.0625rem solid gray;
+    }
+
+    .doe-pic {
+        width: 1.875rem;
+        height: 1.875rem;
+        background-color: #808080;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+
+    .pro-web {
+        align-items:center ;
+    }
+    
+    .pro-web img {
+        object-fit: cover;
+        border-radius: 100%;
     }
     
 }
