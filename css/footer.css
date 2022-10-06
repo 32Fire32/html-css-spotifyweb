@@ -26,7 +26,19 @@ footer {
 
 .center-controls {
     width: 40%;
-    padding: 0.625rem
+    padding: 0.625rem;
+    position: relative;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.commands {
+    justify-content: space-around;
+    margin-bottom: 0.625rem;
+    align-items: center;
+    width: 12.5rem;
+    position: absolute;
+    top: 0.625rem;
 }
 
 .title-song small {
@@ -46,19 +58,22 @@ footer {
 }
 
 .play-line {
-    height: 5px;
     width: 70%;
     background-color: #5a5a5a;
     border-radius: 1.25rem;
+    align-items: center;
+    margin: 0 1.25rem;
 }
 
 .light-line {
+    height: 0.3125rem;
     width: 15%;
     background-color: #fff;
     border-radius: 1.25rem;
 }
 
 .dark-line {
+    height: 0.3125rem;
     width: 85%;
 }
 
@@ -67,18 +82,14 @@ footer {
 }
 
 .line {
-    justify-content: space-between;
     align-items: center;
-}
-
-.commands {
-    justify-content: space-around;
+    justify-content: center;
+    width: 80%;
     margin-bottom: 0.625rem;
-    align-items: center;
 }
 
 .fa-circle-play {
-    font-size: 2.1875rem;
+    font-size: 1.8rem;
 }
 
 .right-controls {
