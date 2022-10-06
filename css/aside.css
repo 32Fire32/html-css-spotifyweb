@@ -1,9 +1,5 @@
 /* ASIDE */
 
-.aside-web {
-    display: none;
-}
-
 aside {
     max-width: 3.125rem;
     background-color: black;
@@ -16,7 +12,6 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     height: 100%;
 }
 
@@ -24,7 +19,7 @@ aside {
     text-align: center;
 }
 
-.aside-mobile img {
+.mobile img {
     margin-bottom: 0.625rem;
     width:90%;
     filter: opacity(0.5);
@@ -35,7 +30,11 @@ a:first-of-type img{
 }
 
 .aside-down {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
 .download {
@@ -55,120 +54,107 @@ a:first-of-type img{
     border-radius: 100%;
 }
 
+.web {
+    display: none;
+}
+
 /* RESPONSIVE */
 
 /* Tablet e Desktop */
 @media screen and (min-width:700px){
 
-    .aside-mobile {
+    .web {
+        display: block;
+    }
+
+    .mobile {
         display: none;
     }
 
-    aside {
-        max-width: 14.375rem;
-        padding: 1.25rem 3.4375rem 0.3125rem 1.25rem;
-    }
-
-    .micon, .nav-web a, li {
-        filter: opacity(0.5);
-    }
-
-    .nav-buttons:first-child img, .nav-buttons:first-child a {
-        filter: opacity(1);
-    }
-
-    aside {
-        position: relative;
-    }
-
-    .acid-green {
-        height:1.5rem;
-        width: 0.3rem;
-        background-color: #adff2f;
-        position:absolute;
-        left: 0;
-    }
-
-    li:first-child {
-        filter: opacity(1);
-    }
-
     .logo {
-        width: 125px;
+        height: 5.625rem;
     }
 
-    .aside-web {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    .nav-web {
-        margin-top: 1.25rem;
+    .aside-container {
         display: flex;
         flex-direction: column;
         align-items: left;
         height: 100%;
     }
 
-    .nav-buttons {
-        margin-bottom: 0.625rem;
+    aside {
+        min-width: 14.375rem;
+        padding: 1.25rem 3rem 0.3125rem 1.25rem;
+        position: relative;
     }
 
-    .nav-web a {
-        color:#fff;
-        margin-left: 0.625rem;
+    .aside-up {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        overflow-y: hidden;
     }
 
-    .micon {
-        width: 1.375rem;
-        margin-bottom: 0;
+    .aside-down {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end ;
+        margin-top: auto;
     }
 
-    .playlist {
-        overflow-y: auto;
+    .aside-buttons img {
+        width: 30px;
+        height: 30px;
     }
 
-    .playlist-title {
-        margin-bottom: 0.625rem;
+    .nav-buttons img {
+        margin-bottom: 0px;
+        margin-right: 10px;
     }
 
     .plus {
-        text-align: center;
-        font-weight: 700;
-        width:2.5rem;
-        height: 2.5rem;
+        height: 45px;
+        width: 45px;
         background-color: #a3a3a3;
-        font-size: 1.875rem;
+        color: black;
+        text-align: center;
+        font-size: 35px;
         display: inline-block;
-        color: #000;
-        margin-right: 0.625rem;
+        margin-right: 10px;
+    }
+
+    .playlist-title {
+        margin-bottom: 20px;
+    }
+    .list-title {
+        margin-bottom:  10px;
     }
 
     li {
-        margin-bottom: 1.25rem;
+        margin-bottom: 10px;
     }
 
-    .aside-web-bottom img {
-        margin-bottom: 0;
-        margin-right: 0.625rem;
+    .web img, a, li {
+        filter: opacity(0.5);
     }
 
-    .profile {
+    .playlist-list {
+        overflow-y: auto;
+    }
+
+    .profilew img {
+        margin-right:20px;
+    }
+
+    .profilew {
         display: inline-block;
-        margin-right: 0.625rem;
     }
 
     .doe {
-        border-top: 0.0625rem solid #808080;
-        padding-top: 1.25rem;
-        margin-top: 1.25rem;
-        display: flex;
-        margin-bottom: 0.625rem;
-        width: 12.5rem;
         align-items: center;
+        margin-top:10px;
+        padding-top :10px;
+        border-top: 1px solid gray;
     }
-
     
 }

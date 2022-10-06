@@ -1,7 +1,7 @@
 /* FOOTER */
 
 footer {
-    position:fixed;
+    position:sticky;
     bottom:0;
     left: 0;
     right:0;
@@ -16,7 +16,7 @@ footer {
 .song-controls {
     justify-content: space-between;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .left-controls, .right-controls {
@@ -26,7 +26,7 @@ footer {
 
 .center-controls {
     width: 40%;
-    padding: 10px
+    padding: 0.625rem
 }
 
 .title-song small {
@@ -35,27 +35,27 @@ footer {
 }
 
 .left-controls img {
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.9375rem;
 }
 
 .actions {
     filter: opacity(0.5);
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 .play-line {
     height: 5px;
     width: 70%;
     background-color: #5a5a5a;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .light-line {
     width: 15%;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .dark-line {
@@ -73,17 +73,21 @@ footer {
 
 .commands {
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     align-items: center;
 }
 
 .fa-circle-play {
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
 
 .right-controls {
-    justify-content: space-between;
-    padding-left: 20px;
+    justify-content: flex-end;
+    padding-left: 1.25rem;
+}
+
+.right-controls i {
+    margin-right: 0.625rem;
 }
 
 .right-controls .play-line {

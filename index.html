@@ -19,30 +19,46 @@
 <body>
     <div class="mainpage-container">
         <aside>
-            <!-- ASIDE TABLET E WEB -->
-            <div class="aside-web">
-                <div class="aside-web-top">
-                    <div class="logo">
+                <div class="aside-container aside-mobile">
+                    <div class="logo web">
                         <a class="link-nostyle" href="#">
                             <img class="spotify-logo" src="img/logo.svg" alt="logo">
                         </a>
                     </div>
-                    <nav class="nav-web">
-                        <div class="nav-buttons flex">  
-                            <div class="acid-green"></div>                      
-                            <img class="micon" src="img/home.svg" alt="home">
-                            <a class="link-nostyle" href="#">Home</a> 
+                    <nav class="aside-up">                        
+                        <div class="aside-buttons web">
+                            <div class="nav-buttons">  
+                                <div class="acid-green"></div>                      
+                                <img class="micon" src="img/home.svg" alt="home">
+                                <a class="link-nostyle" href="#">Home</a> 
+                            </div>
+                            <div class="nav-buttons">
+                                <img class="micon" src="img/search.svg" alt="search"><a class="link-nostyle" href="#">Cerca</a> 
+                            </div>
+                            <div class="nav-buttons">
+                                <img class="micon" src="img/libreria.svg" alt="library"><a class="link-nostyle" href="#">La tua libreria</a> 
+                            </div>
                         </div>
-                        <div class="nav-buttons">
-                            <img class="micon" src="img/search.svg" alt="search"><a class="link-nostyle" href="#">Cerca</a> 
+                        <!-- MOBILE NAV UP-->
+                        <a class="link-nostyle mobile" href="#">
+                            <img src="img/logo-small.svg" alt="logo-small">
+                        </a>
+                        <a class="link-nostyle mobile" href="#">
+                            <img src="img/home.svg" alt="home">
+                        </a>
+                        <a class="link-nostyle mobile" href="#">
+                            <img src="img/search.svg" alt="search">
+                        </a>
+                        <a class="link-nostyle mobile" href="#">
+                            <img src="img/libreria.svg" alt="library">
+                        </a>
+                        <!-- /MOBILE NAV UP-->
+                        <div class="playlist-title mt30 web flex">
+                            <h4 class="list-title">PLAYLIST</h4>
+                            <div class="plus">+</div>Crea Playlist
                         </div>
-                        <div class="nav-buttons">
-                            <img class="micon" src="img/libreria.svg" alt="library"><a class="link-nostyle" href="#">La tua libreria</a> 
-                        </div>
-                        <div class="playlist mt30">
-                            <h4 class="playlist-title">PLAYLIST</h4>
+                        <div class="playlist-list web">
                             <ul class="list-nostyle">
-                                <li><div class="plus">+</div>Crea Playlist</li>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
@@ -50,45 +66,26 @@
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li> 
                             </ul>
-                        </div> 
-                    </nav>                    
-                </div>                
-                <div class="aside-web-bottom">
-                    <a class="link-nostyle" href="#"><img class="download" src="img/download.svg" alt="download">Installa App</a>
-                    <div class="doe">
-                        <div class="profile">
-                            <a class="link-nostyle" href="#"><img src="img/profile.svg" alt="profile"></a>
-                        </div>
-                            <span>John Doe</span>                        
-                    </div>                    
-                </div>                    
-            </div>
-            <!-- / ASIDE TABLET E WEB -->
-
-            <!-- ASIDE MOBILE -->
-                <div class="aside-container aside-mobile">
-                    <nav class="aside-up">
-                        <a class="link-nostyle" href="#">
-                            <img src="img/logo-small.svg" alt="logo-small">
-                        </a>
-                        <a class="link-nostyle" href="#">
-                            <img src="img/home.svg" alt="home">
-                        </a>
-                        <a class="link-nostyle" href="#">
-                            <img src="img/search.svg" alt="search">
-                        </a>
-                        <a class="link-nostyle" href="#">
-                            <img src="img/libreria.svg" alt="library">
-                        </a>
+                        </div>                     
                     </nav>
-                    <nav class="aside-down">
-                        <a class="link-nostyle" href="#"><img class="download" src="img/download.svg" alt="download"></a>
-                        <div class="profile">
+                    <nav class="aside-down mobile">
+                        <!-- MOBILE DOWN -->
+                        <a class="link-nostyle mobile" href="#"><img class="download" src="img/download.svg" alt="download"></a>
+                        <div class="profile mobile">
                             <a class="link-nostyle" href="#"><img src="img/profile.svg" alt="profile"></a>
                         </div>
-                    </nav>        
-                </div>
-            <!-- / ASIDE MOBILE -->                      
+                        <!-- /MOBILE DOWN -->
+                    </nav>
+                    <div class="aside-down web">
+                        <a class="link-nostyle" href="#"><img class="download" src="img/download.svg" alt="download">Installa App</a>
+                        <div class="doe flex">
+                            <div class="profilew">
+                                <a class="link-nostyle" href="#"><img src="img/profile.svg" alt="profile"></a>
+                            </div>
+                                <span>John Doe</span>                        
+                        </div>                    
+                    </div>                
+                </div>     
         </aside>
         <main>
             <header>
