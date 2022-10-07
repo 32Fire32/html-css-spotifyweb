@@ -137,14 +137,19 @@ a:first-of-type img{
     }
 
     .plus {
-        height: 2.8125rem;
-        width: 2.8125rem;
-        background-color: #a3a3a3;
+        height: 2.7rem;
+        width: 2.7rem;
+        background-color: #fff;
         color: black;
         text-align: center;
         font-size: 2.1875rem;
         display: inline-block;
         margin-right: 0.625rem;
+        opacity: 0.5;
+    }
+
+    .playlist-title span {
+        opacity: 0.5;
     }
 
     .playlist-title {
@@ -206,6 +211,10 @@ a:first-of-type img{
 
 .playlist-list a:hover, .download a:hover {
     opacity:1;
+}
+
+.playlist-title:hover span, .playlist-title:hover .plus {
+    opacity: 1;
 }
     
 }

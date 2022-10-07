@@ -42,7 +42,7 @@ footer {
 
 .title-song small {
     display: block;
-    filter: opacity(0.5);
+    opacity: 0.5;
 }
 
 .left-controls img {
@@ -134,3 +134,10 @@ footer {
 .play-line:hover .dot{
     opacity:1;
 }
+
+.title-song:hover small {
+    display: block;
+    opacity: 1;
+    text-decoration:underline;
+}
+
