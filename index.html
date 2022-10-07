@@ -27,19 +27,21 @@
                     </div>
                     <nav class="aside-up">                        
                         <div class="aside-buttons web">
-                            <div class="nav-buttons">  
+                            <div class="nav-buttons flex align-center">
                                 <div class="acid-green"></div>                      
                                 <img class="micon" src="img/home.svg" alt="home">
                                 <a class="link-nostyle" href="#">Home</a> 
                             </div>
-                            <div class="nav-buttons">
-                                <img class="micon" src="img/search.svg" alt="search"><a class="link-nostyle" href="#">Cerca</a> 
+                            <div class="nav-buttons flex align-center">
+                                <img class="micon" src="img/search.svg" alt="search">
+                                <a class="link-nostyle" href="#">Cerca</a> 
                             </div>
-                            <div class="nav-buttons">
-                                <img class="micon" src="img/libreria.svg" alt="library"><a class="link-nostyle" href="#">La tua libreria</a> 
+                            <div class="nav-buttons flex align-center">
+                                <img class="micon" src="img/libreria.svg" alt="library">
+                                <a class="link-nostyle" href="#">La tua libreria</a> 
                             </div>
                         </div>
-                        <!-- MOBILE NAV UP-->
+                        <!-- MOBILE-->
                         <a class="link-nostyle mobile" href="#">
                             <img src="img/logo-small.svg" alt="logo-small">
                         </a>
@@ -52,30 +54,30 @@
                         <a class="link-nostyle mobile" href="#">
                             <img src="img/libreria.svg" alt="library">
                         </a>
-                        <!-- /MOBILE NAV UP-->
+                        <!-- /MOBILE -->
                         <div class="playlist-title mt30 web flex">
                             <h4 class="list-title">PLAYLIST</h4>
                             <div class="plus">+</div>Crea Playlist
                         </div>
-                        <div class="playlist-list web">
-                            <ul class="list-nostyle">
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li> 
-                            </ul>
+                        <div class="playlist-list flex web">
+                                <ul class="list-nostyle">
+                                    <li><a class="link-nostyle" href="#">Nome Playlist</a></li>
+                                    <li><a class="link-nostyle" href="#">Nome Playlist</a></li>
+                                    <li><a class="link-nostyle" href="#">Nome Playlist</a></li>
+                                    <li><a class="link-nostyle" href="#">Nome Playlist</a></li>
+                                    <li><a class="link-nostyle" href="#">Nome Playlist</a></li>
+                                    <li><a class="link-nostyle" href="#">Nome Playlist</a></li>
+                                </ul>
                         </div>                     
                     </nav>
-                    <nav class="aside-down mobile">
                         <!-- MOBILE DOWN -->
+                    <nav class="aside-down mobile">
                         <a class="link-nostyle mobile" href="#"><img class="download" src="img/download.svg" alt="download"></a>
                         <div class="profile mobile">
                             <a class="link-nostyle" href="#"><img src="img/profile.svg" alt="profile"></a>
                         </div>
-                        <!-- /MOBILE DOWN -->
                     </nav>
+                        <!-- /MOBILE DOWN -->
                     <div class="aside-down web">
                         <div class="download flex">
                             <div class="down-icon">
@@ -103,6 +105,7 @@
             <nav class="links flex">
                 <div class="nav-main">
                     <a class="link-nostyle" href="#">IN EVIDENZA</a>
+                    <div class="acid-green"></div>
                 </div>
                 <div class="nav-main">
                     <a class="link-nostyle" href="#">PODCAST</a>
@@ -121,13 +124,16 @@
                 </div>
             </nav>
             <div class="section-container">
-                <section class="recent">
+                <section class="recent ">
                     <h2>Recently played</h2>
                     <div class="row flex">
                         <div class="col">
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/metal_lifting.jpg" alt="heavy-metal">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>Heavy Metal</h3>
@@ -139,6 +145,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/stranger.jpeg" alt="things">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>Stranger Things, Vol1 (a Netflix Original Series Soundtrack)</h3>
@@ -150,6 +159,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/aquietplace.jpeg" alt="quiet-place">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>A quiet place</h3>
@@ -161,6 +173,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/split.jpeg" alt="split">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>Split</h3>
@@ -172,6 +187,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/cure.jpeg" alt="cure">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>A cure for wellness</h3>
@@ -183,6 +201,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/sinister.jpeg" alt="sinister">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>Sinister</h3>
@@ -200,6 +221,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/radar.jpeg" alt="radar">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>Release Radar</h3>
@@ -210,6 +234,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/mixdaily.jpeg" alt="mix-daily">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>Daily Mix</h3>
@@ -226,6 +253,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/youg.jpeg" alt="youg">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>Youg</h3>
@@ -236,6 +266,9 @@
                             <div class="card">
                                 <div class="album-img">
                                     <img src="img/einaudi.jpeg" alt="einaudi">
+                                    <div class="play-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="album-title">
                                     <h3>Einaudi</h3>
@@ -264,17 +297,19 @@
                 </div>               
             </div>
             <div class="center-controls flex">
-                <div class="commands flex">
+                <div class="commands align-center flex">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
                     <i class="fa-regular fa-circle-play"></i>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
-                <div class="line flex"> 
+                <div class="line align-center flex"> 
                     <small>0:25</small>                   
-                    <div class="play-line flex">                        
-                        <div class="light-line"></div>
+                    <div class="play-line align-center flex">             
+                        <div class="light-line">
+                            <div class="dot"></div> 
+                        </div>
                         <div class="dark-line"></div>                        
                     </div>  
                     <small>4:35</small>                  
@@ -285,7 +320,9 @@
                 <i class="fa-solid fa-tv"></i>
                 <i class="fa-solid fa-volume-high"></i>
                 <div class="play-line flex">
-                    <div class="light-line"></div>
+                    <div class="light-line">
+                        <div class="dot"></div>
+                    </div>
                     <div class="dark-line"></div>
                 </div>
             </div>

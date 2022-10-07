@@ -6,7 +6,7 @@ main {
 }
 
 .nav-main a {
-    color:#76787d;
+    filter: opacity(0.5);
 }
 
 .links {
@@ -15,31 +15,42 @@ main {
     justify-content: center;
 }
 
+.links .acid-green {
+    width: 2.1875rem;
+    height: 0.1875rem;
+    background-color: #adff2f;
+    position: absolute;
+    bottom: -0.4375rem;
+    left: 2.375rem;
+}
+
+.nav-main:first-child {
+    position: relative;
+}
+
 .nav-main {
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .section-container {
-    padding: 20px;
+    margin: 1.25rem;
 }
+
+/* section h2, section small {
+    margin-left: 0.625rem;
+} */
 
 .row {
     flex-wrap: wrap;
 }
 
 .col {
-    width: calc(100% / 2);
-    padding: 5px 10px;
+    width: calc(100% / 2 - 20px);
+    margin: 5px 10px;
 }
 
-.row {
-    padding: 0 -20px;
-}
-
-.album-img img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
+.card {
+    
 }
 
 .album-title {
@@ -62,6 +73,43 @@ main {
 
 .created-for h2, .most-popular h2 {
     margin-bottom: 10px;
+}
+
+.album-img {
+    position: relative;
+}
+
+.album-img img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-hover {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+}
+
+.play-hover i {
+    font-size: 5rem;
+}
+
+/* HOVER */
+
+.nav-main a:hover {
+    filter: opacity(1);
+}
+
+.album-img:hover img {
+    filter: opacity(0.5);
+}
+
+.album-img:hover .play-hover {
+    opacity: 1;
 }
 
 /* RESPONSIVE */

@@ -32,9 +32,15 @@ body {
 .upgrade {
      background-color: rgba(0, 0, 0, 0);
      border: 1px solid #fff;
-     border-radius: 30px;
-     margin-right: 20px;
-     padding: 10px;
+     border-radius: 1.875rem;
+     margin-right: 1.875rem;
+     padding: 0.625rem;
+}
+
+/* HOVER */
+
+.upgrade:hover {
+    transform: scale(110%);
 }
 
 /* RESPONSIVE */

@@ -10,7 +10,7 @@ footer {
 }
 
 .playing {
-    align-items:center ;
+    align-items: center ;
 }
 
 .song-controls {
@@ -35,7 +35,6 @@ footer {
 .commands {
     justify-content: space-around;
     margin-bottom: 0.625rem;
-    align-items: center;
     width: 12.5rem;
     position: absolute;
     top: 0.625rem;
@@ -53,7 +52,7 @@ footer {
 }
 
 .actions {
-    filter: opacity(0.5);
+    color: gray;
     padding-left: 1.25rem;
 }
 
@@ -61,7 +60,6 @@ footer {
     width: 70%;
     background-color: #5a5a5a;
     border-radius: 1.25rem;
-    align-items: center;
     margin: 0 1.25rem;
 }
 
@@ -82,7 +80,6 @@ footer {
 }
 
 .line {
-    align-items: center;
     justify-content: center;
     width: 80%;
     margin-bottom: 0.625rem;
@@ -103,4 +100,37 @@ footer {
 
 .right-controls .play-line {
     width: 50%;
+}
+
+.light-line {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height:10px;
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: 0;
+    top: -50%;
+    left: 78%;
+}
+
+/* HOVER */
+
+.actions i:hover {
+    color:white;
+}
+
+.fa-circle-play:hover {
+    transform: scale(110%);
+}
+
+.line:hover .light-line, .play-line:hover .light-line {
+    background-color: #adff2f;
+}
+
+.play-line:hover .dot{
+    opacity:1;
 }
