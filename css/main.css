@@ -36,9 +36,9 @@ main {
     margin: 1.25rem;
 }
 
-/* section h2, section small {
+section h2, section small {
     margin-left: 0.625rem;
-} */
+}
 
 .row {
     flex-wrap: wrap;
@@ -46,11 +46,11 @@ main {
 
 .col {
     width: calc(100% / 2 - 20px);
-    margin: 5px 10px;
+    
 }
 
 .card {
-    
+    margin: 5px 10px;
 }
 
 .album-title {

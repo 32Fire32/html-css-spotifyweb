@@ -34,11 +34,11 @@ aside {
 .mobile img {
     margin-bottom: 0.625rem;
     width:90%;
-    filter: opacity(0.5);
+    opacity: 0.5;
 }
 
 a:first-of-type img{
-    filter: opacity(1);
+   opacity: 1;
 }
 
 .aside-down {
@@ -74,7 +74,7 @@ a:first-of-type img{
 /* HOVER */
 
 .mobile img:hover {
-    filter: opacity(1);
+    opacity: 1;
 }
 
 /* RESPONSIVE */
@@ -95,7 +95,7 @@ a:first-of-type img{
     }
 
     .logo img, .logo a, .nav-buttons:first-child img, .nav-buttons:first-child a {
-        filter: opacity(1);
+        opacity:1;
     }
 
     .aside-container {
@@ -159,8 +159,8 @@ a:first-of-type img{
     }
 
     .web img, a {
-        filter: opacity(0.5);
-    }
+        opacity: 0.5;
+     }
 
     .playlist-list {
         overflow-y: auto;
@@ -200,12 +200,12 @@ a:first-of-type img{
 
     /* HOVER */
 
-.nav-buttons:hover {
-    filter: opacity(1);
+.nav-buttons:hover img,  .nav-buttons:hover a {
+    opacity:1;
 }
 
 .playlist-list a:hover, .download a:hover {
-    filter: opacity(1);
+    opacity:1;
 }
     
 }
